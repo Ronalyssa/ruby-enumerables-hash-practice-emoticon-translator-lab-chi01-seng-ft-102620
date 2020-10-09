@@ -1,9 +1,14 @@
 # require modules here
+require "yaml"
+require 'pry'
+
+
 
 def load_library(path)
   # code goes here
   final_hash = {}
-
+  YAML.load_file(path)
+  binding.pry
   final_hash
 end
 
